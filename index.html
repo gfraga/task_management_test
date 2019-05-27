@@ -1,10 +1,1307 @@
 <html>
 
 <head>
+    <title>Teste Imagem</title>
+
+    <link id="page-icon" rel="shortcut icon" href="assets/img/favicon.ico">
+    <link href="css/task_management.css" rel="stylesheet">
+    <link href="css/ms.vss-web.core-content.min.css" rel="stylesheet">
+    <link href="css/ms.vss-features.ui-widgets-content.min.css" rel="stylesheet">
+
+    <link href="css/ms.vss-features.ui-core-content.min.css" rel="stylesheet">
+    <link href="css/ms.vss-features.ui-breadcrumb-content.min.css" rel="stylesheet">
+    <link href="css/ms.vss-features.search-content.min.css" rel="stylesheet">
+    <link href="css/ms.vss-tfs-web.frame-content.min.css" rel="stylesheet">
+    <link href="css/ms.vss-features.ui-hub-content.min.css" rel="stylesheet">
+    <link href="css/vss-bundle-commoncss-vCVsHElaw0TcmMy19vHUwKWstx-TnCka-a5CkUxXUW4Q=.css" rel="stylesheet">
+    <link href="css/vss-bundle-viewcss-vCIwD_uXPnz-3G7X0uoLZl59VIWvDHVpNLLfdtMAPnDQ=.css" rel="stylesheet">
+    <link href="css/vss-bundle-asynccss-vqOGd4lvlYzHqZvEC3aRoZehHCPT4tIC46ZS0wpNfpTc=.css" rel="stylesheet">
+
+    <script src="js/task_management.js"></script>
 
 </head>
-    <button onclick="openModal()"> </button>
-    <div>
 
+<body class="lwp bolt-focus-visible">
+    <div id="divModal" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front workitem-dialog new-workitem-dialog ui-dialog-legacy ui-dialog-buttons ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-describedby="vss_142" aria-labelledby="ui-id-2"
+        style="position: absolute; height: 400px; width: 1229.4px; top: 41px; left: 69px; display: block; z-index: 10002; display: none;">
+        <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span id="ui-id-2" class="ui-dialog-title">New Issue 3*:</span>
+            <div role="button" class="full-screen-button propagate-keydown-event" aria-label="Enter full screen mode (Z)" tabindex="0"><span class="bowtie-icon bowtie-view-full-screen"></span>
+            </div>
+            <button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" title="Close" onclick="closeModal()">
+                <span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span>
+                <span class="ui-button-text">Close</span>
+            </button>
+            <div class="ui-dialog-titlebar-progress-container">
+                <div class="ui-dialog-titlebar-progress-element" style="visibility: hidden;"></div>
+            </div>
+        </div>
+        <div id="vss_1213" class="dialog ajax-panel ui-dialog-content ui-widget-content" style="width: auto; height: 255.2px; display: block; min-height: 0px; max-height: 269px;">
+            <div id="vss_1220" class="work-item-form work-item-form-main no-headertoolbar">
+                <div id="vss_1221" class="workitem-info-bar workitem-header-bar invalid" style="display: block; border-left-color: rgb(51, 153, 71);">
+                    <div class="info-text-wrapper"><span class="work-item-type-icon-host"><div class="ms-TooltipHost host_3e21a177 work-item-type-icon-wrapper"><i aria-label="Issue" class="work-item-type-icon bowtie-icon bowtie-symbol-issue" style="color: rgb(51, 153, 71);"></i></div></span>
+                        <span class="caption">New Issue *</span><span class="info-text" role="alert" style="display: inline;">Field 'Title' cannot be empty.</span></div>
+                </div>
+                <div id="vss_1222" class="work-item-view new-work-item-view" tabindex="-1">
+                    <div class="witform-layout">
+                        <div class="witform-layout-scrollable-frame">
+                            <div class="witform-layout-content-container">
+                                <div class="work-item-form-main-header" style="border-left-color: rgb(51, 153, 71);">
+                                    <div class="work-item-form-headerContent">
+                                        <div class="workitemlabel label-control"></div>
+                                        <div class="workitemcontrol work-item-control work-item-form-id initialized" style="display: none;"><span aria-label="ID Field" href=""></span></div>
+                                        <div class="workitemlabel label-control"></div>
+                                        <div class="workitemcontrol work-item-control work-item-form-title initialized">
+                                            <div id="witc_177" class="combo input-text-box list text invalid emptyBorder">
+                                                <div class="wrap">
+                                                    <input type="text" id="txtIssueTitle" onkeypress="onTitleChange(this)" autocomplete="off" aria-label="Title Field" title="" placeholder="Enter title" maxlength="255" aria-invalid="true">
+                                                </div>
+                                                <div class="drop bowtie-chevron-down-light bowtie-icon" role="button" aria-label="Expand"></div>
+                                            </div>
+                                        </div>
+                                        <div id="vss_1223" class="copy-workitem-title-container propagate-keydown-event" role="button" aria-label="Copy work item title (Shift+Alt+C)"><span class="bowtie-icon bowtie-edit-copy" style="display: none;"></span></div>
+                                    </div>
+                                    <div class="work-item-form-headerContent flex-row">
+                                        <div class="work-item-form-header-controls-container">
+                                            <div class="workitemlabel label-control" style="display: none;"><label class="workitemcontrol-label" for="witc_178_txt" accesskey="g">Assi<u>g</u>ned To</label></div>
+                                            <div class="workitemcontrol work-item-control work-item-form-assignedTo initialized identity-picker-container">
+                                                <div id="vss_1288" aria-label="Assigned To Field" class="identity-picker-search-box" style="height: 18px;"><span class="identity-picker-resolved identity-picker-resolved-single-search element-height-small element-height-small-compensate-padding" tabindex="-1" role="button" aria-disabled="false" aria-label="Selected identity "
+                                                        aria-describedby="1309" style="width: 119px;"><img src="assets/img/notassigned-user.svg" alt="" draggable="false" class="user-picture-resolved element-2d-small" data-objectid="STRING_ENTITYID_Unassigned" style="background: none 0% 0% / 100% no-repeat;"><span class="identity-picker-watermark-name text-cursor" tabindex="0">Unassigned</span>
+                                                    <div id="1309" class="visually-hidden">Focus on the selected item to change the value via a combo box</div>
+                                                    </span><input type="text" spellcheck="false" autocomplete="off" placeholder="Search users" class="identity-picker-input element-height-small" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-label="Search users"
+                                                        id="witc_178_txt" style="width: 168px; display: none;"><span class="identity-picker-search-drop-icon bowtie-icon bowtie-triangle-down"></span></div>
+                                            </div>
+                                            <div class="discussion-adornment-container">
+                                                <div id="vss_1224" class="discussion-adornment-control propagate-keydown-event" role="button" tabindex="0" aria-label="Go to discussion. There are 0 comments available (Ctrl+Shift+D)"><span class="bowtie-icon bowtie-comment-discussion"></span><span class="text">0 comments</span></div>
+                                            </div>
+                                            <div class="workitemlabel label-control" style="display: none;"></div>
+                                            <div class="workitemcontrol work-item-control work-item-form-tags initialized">
+                                                <div id="vss_1293" class="tfs-tags">
+                                                    <div class="tags-items-container" role="toolbar" aria-label="">
+                                                        <ul>
+                                                            <li class="tag-item tags-add-button tag-item-delete-experience" index="0" tabindex="0"><span class="tag-container tag-container-selectable" role="button" dir="ltr" aria-label="Add tag"><span class="tag-box tag-box-selectable" dir="ltr">Add tag</span></span>
+                                                            </li>
+                                                            <li class="tag-item-delete-experience" aria-hidden="true"><input class="tags-input tag-box ui-autocomplete-input" type="text" placeholder="" autocomplete="off" style="display: none;"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="work-item-form-toolbar-container">
+                                            <div id="vss_1310" class="toolbar workitem-tool-bar">
+                                                <ul id="vss_1311" role="menubar" class="menu-bar" tabindex="0">
+                                                    <li id="liSaveClose" onclick="saveCloseTask()" class="menu-item split-drop-item drop-down-save disabled" tabindex="-1" role="menuitem" title="" aria-describedby="vss_1434" aria-disabled="true" aria-posinset="1" aria-setsize="5">
+                                                        <div id="vss_1433" class="rich-content-tooltip popup-content-control v2 auto-width" style="position: fixed;">
+                                                            <div class="popup-tag"></div>
+                                                            <div class="popup-content-container" role="tooltip" id="vss_1434" aria-hidden="true">(Ctrl+Enter)</div>
+                                                        </div><span class="menu-item-icon bowtie-icon bowtie-save-close bowtie-white" aria-hidden="true"></span><span class="text" role="button">Save &amp; Close</span><span class="html"></span></li>
+                                                    <li id="mi_1429_save-actions" class="menu-item drop-down-chevron drop-visible disabled" tabindex="-1" role="menuitem" title="" aria-describedby="vss_1431" aria-label="More save options" command="save-actions" aria-haspopup="true" aria-expanded="false"
+                                                        aria-disabled="true" aria-posinset="2" aria-setsize="5">
+                                                        <div class="drop"></div>
+                                                        <div id="vss_1430" class="rich-content-tooltip popup-content-control v2 auto-width" style="position: fixed;">
+                                                            <div class="popup-tag"></div>
+                                                            <div class="popup-content-container" role="tooltip" id="vss_1431" aria-hidden="true">More save options</div>
+                                                        </div>
+                                                    </li>
+                                                    <li id="mi_1436_work-item-follow" class="menu-item follow-item-menu-item disabled invisible" tabindex="-1" role="menuitem" title="" aria-describedby="vss_1438" command="work-item-follow" aria-disabled="true">
+                                                        <div id="vss_1437" class="rich-content-tooltip popup-content-control v2 auto-width" style="position: fixed;">
+                                                            <div class="popup-tag"></div>
+                                                            <div class="popup-content-container" role="tooltip" id="vss_1438" aria-hidden="true">Follow</div>
+                                                        </div><span class="menu-item-icon bowtie-icon bowtie-watch-eye" aria-hidden="true"></span><span class="text" role="button">Follow</span><span class="html"></span></li>
+                                                    <li id="mi_1440_work-item-unfollow" class="menu-item follow-item-menu-item invisible disabled" tabindex="-1" role="menuitem" title="" aria-describedby="vss_1442" command="work-item-unfollow" aria-disabled="true">
+                                                        <div id="vss_1441" class="rich-content-tooltip popup-content-control v2 auto-width" style="position: fixed;">
+                                                            <div class="popup-tag"></div>
+                                                            <div class="popup-content-container" role="tooltip" id="vss_1442" aria-hidden="true">Following</div>
+                                                        </div><span class="menu-item-icon bowtie-icon bowtie-watch-eye-fill" aria-hidden="true"></span><span class="text" role="button">Following</span><span class="html"></span></li>
+                                                    <li id="mi_1444_refresh-work-item" class="menu-item icon-only disabled" tabindex="-1" role="menuitem" title="" aria-describedby="vss_1446" aria-label="Refresh" command="refresh-work-item" aria-disabled="true" aria-posinset="3" aria-setsize="5">
+                                                        <div id="vss_1445" class="rich-content-tooltip popup-content-control v2 auto-width" style="position: fixed;">
+                                                            <div class="popup-tag"></div>
+                                                            <div class="popup-content-container" role="tooltip" id="vss_1446" aria-hidden="true">Refresh</div>
+                                                        </div><span class="menu-item-icon bowtie-icon bowtie-navigate-refresh" role="button" aria-label="Refresh"></span><span class="html"></span></li>
+                                                    <li id="mi_1448_revert-work-item" class="menu-item icon-only disabled" tabindex="-1" role="menuitem" title="" aria-describedby="vss_1450" aria-label="Revert changes" command="revert-work-item" aria-disabled="true" aria-posinset="4" aria-setsize="5">
+                                                        <div id="vss_1449" class="rich-content-tooltip popup-content-control v2 auto-width" style="position: fixed;">
+                                                            <div class="popup-tag"></div>
+                                                            <div class="popup-content-container" role="tooltip" id="vss_1450" aria-hidden="true">Revert changes</div>
+                                                        </div><span class="menu-item-icon bowtie-icon bowtie-edit-undo" role="button" aria-label="Revert changes"></span><span class="html"></span></li>
+                                                    <li id="mi_1452_destroy-work-item" class="menu-item invisible icon-only disabled" tabindex="-1" role="menuitem" title="" aria-describedby="vss_1454" aria-label="Permanently delete" command="destroy-work-item" aria-disabled="true">
+                                                        <div id="vss_1453" class="rich-content-tooltip popup-content-control v2 auto-width" style="position: fixed;">
+                                                            <div class="popup-tag"></div>
+                                                            <div class="popup-content-container" role="tooltip" id="vss_1454" aria-hidden="true">Permanently delete</div>
+                                                        </div><span class="menu-item-icon bowtie-icon bowtie-edit-delete" role="button" aria-label="Permanently delete"></span><span class="html"></span></li>
+                                                    <li id="mi_1456_restore-work-item" class="menu-item invisible icon-only disabled" tabindex="-1" role="menuitem" title="" aria-describedby="vss_1458" aria-label="Restore" command="restore-work-item" aria-disabled="true">
+                                                        <div id="vss_1457" class="rich-content-tooltip popup-content-control v2 auto-width" style="position: fixed;">
+                                                            <div class="popup-tag"></div>
+                                                            <div class="popup-content-container" role="tooltip" id="vss_1458" aria-hidden="true">Restore</div>
+                                                        </div><span class="menu-item-icon bowtie-icon bowtie-recycle-bin-restore" role="button" aria-label="Restore"></span><span class="html"></span></li>
+                                                    <li id="mi_1460_actions" class="menu-item icon-only" tabindex="-1" role="menuitem" title="" aria-describedby="vss_1462" aria-label="Actions" command="actions" aria-haspopup="true" aria-expanded="false" aria-disabled="false" aria-posinset="5" aria-setsize="5">
+                                                        <div id="vss_1461" class="rich-content-tooltip popup-content-control v2 auto-width" style="position: fixed;">
+                                                            <div class="popup-tag"></div>
+                                                            <div class="popup-content-container" role="tooltip" id="vss_1462" aria-hidden="true">Actions</div>
+                                                        </div><span class="menu-item-icon bowtie-icon bowtie-ellipsis" role="button" aria-label="Actions"></span><span class="html"></span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="work-item-form-main-core">
+                                    <div class="work-item-form-responsive-header">
+                                        <div class="work-item-responsive-viewport large">
+                                            <div class="work-item-responsive-header">
+                                                <div class="work-item-responsive-header-left" style="max-width: calc(100% - 17px);">
+                                                    <div class="work-item-header-page">
+                                                        <div class="work-item-header-section">
+                                                            <div class="work-item-header-group">
+                                                                <div class="work-item-header-control-container">
+                                                                    <div class="workitemlabel label-control">
+                                                                        <label class="workitemcontrol-label" for="witc_179_txt" accesskey="e">Stat<u>e</u></label>
+                                                                    </div>
+                                                                    <div class="workitemcontrol work-item-control initialized state-coloring-enabled">
+                                                                        <div class="state-circle" style="border-color: rgb(178, 178, 178); background-color: rgb(178, 178, 178);"></div>
+                                                                        <div id="witc_179" class="combo input-text-box list drop">
+                                                                            <div class="wrap">
+                                                                                <input type="text" id="witc_179_txt" autocomplete="off" aria-label="State Field" title="" maxlength="255" role="combobox" aria-autocomplete="both">
+                                                                            </div>
+                                                                            <div class="drop bowtie-chevron-down-light bowtie-icon" role="button" aria-label="Expand"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="work-item-header-control-container">
+                                                                    <div class="workitemlabel label-control"><label class="workitemcontrol-label" for="witc_180_txt">Reason</label></div>
+                                                                    <div class="workitemcontrol work-item-control initialized">
+                                                                        <div id="witc_180" class="combo input-text-box list drop">
+                                                                            <div class="wrap"><input type="text" id="witc_180_txt" autocomplete="off" aria-label="Reason Field" title="" maxlength="255" aria-invalid="false" aria-expanded="false" role="combobox" aria-autocomplete="both"></div>
+                                                                            <div class="drop bowtie-chevron-down-light bowtie-icon" role="button" aria-label="Expand"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="work-item-header-section">
+                                                            <div class="work-item-header-group">
+                                                                <div class="work-item-header-control-container">
+                                                                    <div class="workitemlabel label-control"><label class="workitemcontrol-label" for="witc_181_txt" accesskey="A"><u>A</u>rea</label></div>
+                                                                    <div class="workitemcontrol work-item-control initialized new-classification-control">
+                                                                        <div class="tree-picker-container workitem-classification-picker">
+                                                                            <div class="tree-picker-label"><label class="ms-Label root-80">Area Path</label></div>
+                                                                            <div class="tree-picker-combo" tabindex="0">
+                                                                                <div class="tree-picker-content">
+                                                                                    <div class="treepicker-item">
+                                                                                        <div class="treepicker-item-title">
+                                                                                            <div class="treepicker-item-title-tooltip"><input role="combobox" class="treepicker-item-title-input" tabindex="-1" id="witc_181_txt" aria-label="Area Path" aria-expanded="false" readonly="" value="project_test"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="tree-picker-dropdown-button-container"><button type="button" tabindex="-1" class="ms-Button tree-picker-dropdown-button ms-Button--icon root-43" role="presentation" data-is-focusable="true"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="ChevronDown" class="ms-Button-icon icon-51" role="presentation"></i></div></button></div>
+                                                                            </div>
+                                                                            <div role="status" aria-live="assertive" class="tree-picker-error"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="work-item-header-control-container">
+                                                                    <div class="workitemlabel label-control"><label class="workitemcontrol-label" for="witc_182_txt" accesskey="r">Ite<u>r</u>ation</label></div>
+                                                                    <div class="workitemcontrol work-item-control initialized new-classification-control">
+                                                                        <div class="tree-picker-container workitem-classification-picker">
+                                                                            <div class="tree-picker-label"><label class="ms-Label root-80">Iteration Path</label></div>
+                                                                            <div class="tree-picker-combo" tabindex="0">
+                                                                                <div class="tree-picker-content">
+                                                                                    <div class="treepicker-item">
+                                                                                        <div class="treepicker-item-title">
+                                                                                            <div class="treepicker-item-title-tooltip"><input role="combobox" class="treepicker-item-title-input" tabindex="-1" id="witc_182_txt" aria-label="Iteration Path" aria-expanded="false" readonly="" value="project_test\Sprint 1"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="tree-picker-dropdown-button-container"><button type="button" tabindex="-1" class="ms-Button tree-picker-dropdown-button ms-Button--icon root-43" role="presentation" data-is-focusable="true"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="ChevronDown" class="ms-Button-icon icon-51" role="presentation"></i></div></button></div>
+                                                                            </div>
+                                                                            <div role="status" aria-live="assertive" class="tree-picker-error"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="work-item-responsive-freshness minimal">
+                                                        <div class="work-item-form-coreContent-lastUpdatedContainer">
+                                                            <div class="workitemlabel label-control"></div>
+                                                            <div class="workitemcontrol work-item-control work-item-form-changedby initialized"><span></span>
+                                                                <div style="display: block;"><span class="freshness-indicator" style="display: none;"></span><span class="freshness-indicator"></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="work-item-responsive-freshness full">
+                                                        <div class="work-item-form-coreContent-lastUpdatedContainer">
+                                                            <div class="workitemlabel label-control"></div>
+                                                            <div class="workitemcontrol work-item-control work-item-form-changedby initialized"><span></span>
+                                                                <div style="display: block;"><span class="freshness-indicator"></span><span class="freshness-indicator" style="display: none;"></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="work-item-responsive-header-right" style="min-width: 17px;">
+                                                    <div class="work-item-responsive-header-tabs">
+                                                        <div>
+                                                            <div id="vss_1225" class="work-item-form-tabs">
+                                                                <ul role="tablist">
+                                                                    <li id="vss_1230" class="work-item-form-tab propagate-keydown-event selected-tab" role="tab" aria-labelledby="1231" aria-selected="true" aria-posinset="1" aria-setsize="4" tabindex="0" style="display: inline-block;"><span class="page-button" id="1231" aria-label="Details">Details</span><span id="1232"></span></li>
+                                                                    <li id="vss_1234" class="work-item-form-tab icon-tab propagate-keydown-event" role="tab" aria-labelledby="1235 1236" aria-selected="false" aria-posinset="2" aria-setsize="4" style="display: inline-block;"><span class="page-button icon bowtie-icon bowtie-navigate-history" id="1235" aria-label="History"></span><span id="1236" class="icon-tab"></span></li>
+                                                                    <li id="vss_1240" class="work-item-form-tab icon-tab propagate-keydown-event" role="tab" aria-labelledby="1241 1242" aria-selected="false" aria-posinset="3" aria-setsize="4" style="display: inline-block;"><span class="page-button icon bowtie-icon bowtie-link" id="1241" aria-label="Links"></span><span class="link-count icon-tab" id="1242"></span></li>
+                                                                    <li id="vss_1246" class="work-item-form-tab icon-tab propagate-keydown-event" role="tab" aria-labelledby="1247 1248" aria-selected="false" aria-posinset="4" aria-setsize="4" style="display: inline-block;"><span class="page-button icon bowtie-icon bowtie-attach" id="1247" aria-label="Attachments"></span><span class="attachment-count icon-tab" id="1248"></span></li>
+                                                                    <li class="work-item-form-tabs-toolbar" style="display: none;">
+                                                                        <ul id="vss_1226" role="menubar" class="menu-bar" tabindex="0">
+                                                                            <li id="mi_1228_actions" class="menu-item icon-only" tabindex="-1" role="menuitem" title="" command="actions" aria-haspopup="true" aria-expanded="false" aria-disabled="false" aria-posinset="1" aria-setsize="1"><span class="menu-item-icon bowtie-icon bowtie-ellipsis" role="button"></span><span class="html"></span></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-body">
+                                    <div id="vss_1229" class="form-grid" tabindex="-1" style="display: block;">
+                                        <div class="section-container">
+                                            <div class="section1 form-section wide-section section" style="width: 50%;">
+                                                <div>
+                                                    <div id="vss_1251" class="grid-group-container">
+                                                        <div id="vss_1252" class="grid-group">
+                                                            <div class="tfs-collapsible-header wit-form-group-header" role="presentation"><span class="tfs-collapsible-text" tabindex="0" aria-labelledby="ui-id-65"><div role="heading" aria-level="2" class="screenreader" id="ui-id-66">Description</div><span role="button" aria-label="Collapse Description section." id="ui-id-65" class="headerlabel">Description</span></span>
+                                                                <button class="richeditor-toolbar-button workitem-group-maximize" unselectable="on" aria-label="Maximize Description">
+                                                        <div class="bowtie-icon bowtie-view-full-screen"></div>
+                                                        </button><span class="tfs-collapsible-collapse icon bowtie-icon bowtie-chevron-up" aria-hidden="true"></span></div>
+                                                            <div class="tfs-collapsible-content">
+                                                                <div class="group-controls">
+                                                                    <div class="control">
+                                                                        <div class="workitemlabel label-control" style="display: none;"></div>
+                                                                        <div class="workitemcontrol work-item-control initialized html-editor-container">
+                                                                            <div class="html-editor auto-grow">
+                                                                                <div class="focus-out-shell rooster-wrapper">
+                                                                                    <div aria-label="Description" class="lean-rooster rooster-editor propagate-keydown-event text-element view-mode show-placeholder" data-placeholder="Click to add Description" contenteditable="true" dir="ltr" tabindex="0" aria-multiline="true" role="textbox"
+                                                                                        style="user-select: text;"></div>
+                                                                                    <div class="rooster-command-bar rooster-command-bar">
+                                                                                        <div class="ms-CommandBar root_582ca1be rooster-command-bar-base html-command-bar-base">
+                                                                                            <div role="menubar" class="ms-FocusZone container_582ca1be" data-focuszone-id="FocusZone3709">
+                                                                                                <div class="ms-CommandBar-primaryCommands primaryCommands_582ca1be">
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Bold" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-pressed="false"
+                                                                                                                aria-label="Bold" data-is-focusable="true" tabindex="0"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="Bold" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Italic" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-pressed="false"
+                                                                                                                aria-label="Italic" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="Italic" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Underline" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-pressed="false"
+                                                                                                                aria-label="Underline" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="Underline" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Bulleted list" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-pressed="false"
+                                                                                                                aria-label="Bulleted list" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="BulletedListText" class="stacked-icon stacked-icon-BulletedListText root-42" role="presentation"></i><i data-icon-name="BulletedListBullet" class="stacked-icon stacked-icon-BulletedListBullet root-42" role="presentation"></i><i data-icon-name="BulletedList" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Numbered list" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-pressed="false"
+                                                                                                                aria-label="Numbered list" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="NumberedListText" class="stacked-icon stacked-icon-NumberedListText root-42" role="presentation"></i><i data-icon-name="NumberedListNumber" class="stacked-icon stacked-icon-NumberedListNumber root-42" role="presentation"></i><i data-icon-name="NumberedList" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Highlight" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-label="Highlight"
+                                                                                                                data-is-focusable="true" aria-expanded="false" aria-haspopup="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="FontColorSwatch" class="stacked-icon highlight-swatch root-42" role="presentation"></i><i data-icon-name="FabricTextHighlight" class="stacked-icon stacked-icon-FabricTextHighlight root-42" role="presentation"></i><i data-icon-name="FabricTextHighlightComposite" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div><i data-icon-name="ChevronDown" class="ms-Button-menuIcon menuIcon-86" role="presentation"></i></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Font color" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-label="Font color"
+                                                                                                                data-is-focusable="true" aria-expanded="false" aria-haspopup="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="FontColorSwatch" class="stacked-icon color-swatch root-42" role="presentation"></i><i data-icon-name="FontColorA" class="stacked-icon stacked-icon-FontColorA root-42" role="presentation"></i><i data-icon-name="FontColor" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div><i data-icon-name="ChevronDown" class="ms-Button-menuIcon menuIcon-86" role="presentation"></i></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Insert emoji" class="ms-Button rooster-command-bar-button rooster-emoji-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                aria-label="Insert emoji" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i class="ms-Button-icon rooster-command-bar-icon rooster-emoji icon-87" role="presentation"></i></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Decrease indent" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-label="Decrease indent"
+                                                                                                                data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="DecreaseIndentText" class="stacked-icon stacked-icon-DecreaseIndentText root-42" role="presentation"></i><i data-icon-name="DecreaseIndentArrow" class="stacked-icon stacked-icon-DecreaseIndentArrow root-42" role="presentation"></i><i data-icon-name="DecreaseIndentLegacy" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Increase indent" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-label="Increase indent"
+                                                                                                                data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="IncreaseIndentText" class="stacked-icon stacked-icon-IncreaseIndentText root-42" role="presentation"></i><i data-icon-name="IncreaseIndentArrow" class="stacked-icon stacked-icon-IncreaseIndentArrow root-42" role="presentation"></i><i data-icon-name="IncreaseIndentLegacy" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Strikethrough" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-pressed="false"
+                                                                                                                aria-label="Strikethrough" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="Strikethrough" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Header" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-label="Header"
+                                                                                                                data-is-focusable="true" aria-expanded="false" aria-haspopup="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="FontSize" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i><i data-icon-name="ChevronDown" class="ms-Button-menuIcon menuIcon-86" role="presentation"></i></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Code" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-label="Code"
+                                                                                                                data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="Embed" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Clear format" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-label="Clear format"
+                                                                                                                data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="ClearFormattingA" class="stacked-icon stacked-icon-ClearFormattingA root-42" role="presentation"></i><i data-icon-name="ClearFormattingEraser" class="stacked-icon stacked-icon-ClearFormattingEraser root-42" role="presentation"></i><i data-icon-name="ClearFormatting" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Insert image" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-label="Insert image"
+                                                                                                                data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="Photo2Fill" class="stacked-icon stacked-icon-Photo2Fill root-42" role="presentation"></i><i data-icon-name="Photo2" class="stacked-icon stacked-icon-Photo2 root-42" role="presentation"></i></div></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Create link" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81" aria-label="Create link"
+                                                                                                                data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="Link" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                    </div>
+                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Remove link" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar is-disabled root-88"
+                                                                                                                disabled="" aria-label="Remove link" data-is-focusable="false" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="RemoveLinkChain" class="stacked-icon stacked-icon-RemoveLinkChain root-42" role="presentation"></i><i data-icon-name="RemoveLinkX" class="stacked-icon stacked-icon-RemoveLinkX root-42" role="presentation"></i><i data-icon-name="RemoveLink" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div></div></button></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="ms-CommandBar-sideCommands sideCommands_582ca1be"></div>
+                                                                                            </div>
+                                                                                        </div><input type="file" accept="image/*" style="display: none;"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wrapping-container" style="width: 50%;">
+                                                <div class="section2 form-section section" style="width: 50%;">
+                                                    <div>
+                                                        <div id="vss_1255" class="grid-group-container">
+                                                            <div id="vss_1256" class="grid-group">
+                                                                <div class="tfs-collapsible-header wit-form-group-header" role="presentation"><span class="tfs-collapsible-text" tabindex="0" aria-labelledby="ui-id-67"><div role="heading" aria-level="2" class="screenreader" id="ui-id-68">Planning</div><span role="button" aria-label="Collapse Planning section." id="ui-id-67">Planning</span></span>
+                                                                    <span class="tfs-collapsible-collapse icon bowtie-icon bowtie-chevron-up" aria-hidden="true"></span>
+                                                                </div>
+                                                                <div class="tfs-collapsible-content">
+                                                                    <div class="group-controls">
+                                                                        <div class="control">
+                                                                            <div class="workitemlabel label-control"><label class="workitemcontrol-label" for="witc_187_txt">Priority</label></div>
+                                                                            <div class="workitemcontrol work-item-control initialized">
+                                                                                <div id="witc_187" class="combo input-text-box list drop">
+                                                                                    <div class="wrap"><input type="text" id="witc_187_txt" autocomplete="off" aria-label="Priority" title="" maxlength="255" aria-invalid="false" aria-expanded="false" role="combobox" aria-autocomplete="both"></div>
+                                                                                    <div class="drop bowtie-chevron-down-light bowtie-icon" role="button" aria-label="Expand"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="control">
+                                                                            <div class="workitemlabel label-control"><label class="workitemcontrol-label" for="witc_188_txt">Effort</label></div>
+                                                                            <div class="workitemcontrol work-item-control initialized">
+                                                                                <div id="witc_188" class="combo input-text-box list text emptyBorder">
+                                                                                    <div class="wrap"><input type="text" id="witc_188_txt" autocomplete="off" aria-label="Effort" title="" maxlength="255" aria-invalid="false"></div>
+                                                                                    <div class="drop bowtie-chevron-down-light bowtie-icon" role="button" aria-label="Expand"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="section3 form-section last-section section" style="float: right; width: 50%;">
+                                                    <div>
+                                                        <div id="vss_1257" class="grid-group-container">
+                                                            <div id="vss_1258" class="grid-group">
+                                                                <div class="tfs-collapsible-header wit-form-group-header" role="presentation"><span class="tfs-collapsible-text" tabindex="0" aria-labelledby="ui-id-69"><div role="heading" aria-level="2" class="screenreader" id="ui-id-70">Development</div><span role="button" aria-label="Collapse Development section." id="ui-id-69">Development</span></span>
+                                                                    <button class="richeditor-toolbar-button workitem-group-maximize" unselectable="on" aria-label="Maximize Development">
+                                                        <div class="bowtie-icon bowtie-view-full-screen"></div>
+                                                        </button><span class="tfs-collapsible-collapse icon bowtie-icon bowtie-chevron-up" aria-hidden="true"></span></div>
+                                                                <div class="tfs-collapsible-content">
+                                                                    <div class="group-controls">
+                                                                        <div class="control">
+                                                                            <div class="workitemlabel label-control" style="display: none;"></div>
+                                                                            <div class="workitemcontrol work-item-control initialized links-control" tabindex="-1">
+                                                                                <div class="add-links-container">
+                                                                                    <div><button class="add-new-item-component-button" tabindex="0"><i class="vss-Icon vss-Icon--bowtie bowtie-math-plus-heavy root-54" role="presentation"></i><span class="text">Add link</span></button></div>
+                                                                                </div>
+                                                                                <div class="links-control-container">
+                                                                                    <div class="la-main-component" tabindex="-1"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div id="vss_1261" class="grid-group-container">
+                                                            <div id="vss_1262" class="grid-group">
+                                                                <div class="tfs-collapsible-header wit-form-group-header" role="presentation"><span class="tfs-collapsible-text" tabindex="0" aria-labelledby="ui-id-71"><div role="heading" aria-level="2" class="screenreader" id="ui-id-72">Related Work</div><span role="button" aria-label="Collapse Related Work section." id="ui-id-71">Related Work</span></span>
+                                                                    <button class="richeditor-toolbar-button workitem-group-maximize" unselectable="on" aria-label="Maximize Related Work">
+                                                        <div class="bowtie-icon bowtie-view-full-screen"></div>
+                                                        </button><span class="tfs-collapsible-collapse icon bowtie-icon bowtie-chevron-up" aria-hidden="true"></span></div>
+                                                                <div class="tfs-collapsible-content">
+                                                                    <div class="group-controls">
+                                                                        <div class="control">
+                                                                            <div class="workitemlabel label-control" style="display: none;"></div>
+                                                                            <div class="workitemcontrol work-item-control initialized links-control" tabindex="-1">
+                                                                                <div class="add-links-container">
+                                                                                    <div><button class="add-new-item-component-button" tabindex="0"><i class="vss-Icon vss-Icon--bowtie bowtie-math-plus-heavy root-54" role="presentation"></i><span class="text">Add link</span><i class="vss-Icon vss-Icon--bowtie bowtie-chevron-down root-54" role="presentation"></i></button></div>
+                                                                                </div>
+                                                                                <div class="links-control-container">
+                                                                                    <div class="la-main-component" tabindex="-1">
+                                                                                        <div class="la-zero-data-container">
+                                                                                            <div class="la-zero-data"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style="clear: left;"></div>
+                                            <div class="bottom-section section" style="width: 50%;">
+                                                <div>
+                                                    <div id="vss_1265" class="grid-group-container">
+                                                        <div id="vss_1266" class="grid-group">
+                                                            <div class="tfs-collapsible-header wit-form-group-header" role="presentation"><span class="tfs-collapsible-text" tabindex="0" aria-labelledby="ui-id-73"><div role="heading" aria-level="2" class="screenreader" id="ui-id-74">Discussion</div><span role="button" aria-label="Collapse Discussion section." id="ui-id-73">Discussion</span></span>
+                                                                <button class="richeditor-toolbar-button workitem-group-maximize" unselectable="on" aria-label="Maximize Discussion">
+                                                    <div class="bowtie-icon bowtie-view-full-screen"></div>
+                                                    </button><span class="tfs-collapsible-collapse icon bowtie-icon bowtie-chevron-up" aria-hidden="true"></span></div>
+                                                            <div class="tfs-collapsible-content">
+                                                                <div class="group-controls">
+                                                                    <div class="control">
+                                                                        <div class="workitemlabel label-control" style="display: none;"></div>
+                                                                        <div class="workitemcontrol work-item-control initialized work-item-discussion-control">
+                                                                            <div id="vss_1306" class="discussion-control">
+                                                                                <div class="discussion-editor-control">
+                                                                                    <div class="discussion-message-entry">
+                                                                                        <div class="discussion-messages-left">
+                                                                                            <div aria-label="Gustavo Fraga" aria-expanded="false"><img class="identity-picture small identity-973670a1-f93f-6317-b57a-de19adcb3807" src="/gustavofraga0095/_api/_common/IdentityImage?id=973670a1-f93f-6317-b57a-de19adcb3807&amp;__v=5"
+                                                                                                    alt=""></div>
+                                                                                        </div>
+                                                                                        <div class="discussion-messages-right">
+                                                                                            <div class="html-editor editor auto-grow">
+                                                                                                <div class="focus-out-shell rooster-wrapper with-chrome">
+                                                                                                    <div aria-label="Discussion" class="lean-rooster rooster-editor propagate-keydown-event text-element view-mode show-placeholder" data-placeholder="Add a comment. Use # to link a work item, ! to link a pull request, or @ to mention a person." contenteditable="true"
+                                                                                                        dir="ltr" tabindex="0" aria-multiline="true" role="textbox" style="user-select: text;"></div>
+                                                                                                    <div class="rooster-command-bar rooster-command-bar">
+                                                                                                        <div class="ms-CommandBar root_582ca1be rooster-command-bar-base html-command-bar-base">
+                                                                                                            <div role="menubar" class="ms-FocusZone container_582ca1be" data-focuszone-id="FocusZone3779">
+                                                                                                                <div class="ms-CommandBar-primaryCommands primaryCommands_582ca1be">
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Bold" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-pressed="false" aria-label="Bold" data-is-focusable="true" tabindex="0"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="Bold" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Italic" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-pressed="false" aria-label="Italic" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="Italic" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Underline" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-pressed="false" aria-label="Underline" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="Underline" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Bulleted list" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-pressed="false" aria-label="Bulleted list" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="BulletedListText" class="stacked-icon stacked-icon-BulletedListText root-42" role="presentation"></i><i data-icon-name="BulletedListBullet" class="stacked-icon stacked-icon-BulletedListBullet root-42" role="presentation"></i><i data-icon-name="BulletedList" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Numbered list" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-pressed="false" aria-label="Numbered list" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="NumberedListText" class="stacked-icon stacked-icon-NumberedListText root-42" role="presentation"></i><i data-icon-name="NumberedListNumber" class="stacked-icon stacked-icon-NumberedListNumber root-42" role="presentation"></i><i data-icon-name="NumberedList" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Highlight" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-label="Highlight" data-is-focusable="true" aria-expanded="false" aria-haspopup="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="FontColorSwatch" class="stacked-icon highlight-swatch root-42" role="presentation"></i><i data-icon-name="FabricTextHighlight" class="stacked-icon stacked-icon-FabricTextHighlight root-42" role="presentation"></i><i data-icon-name="FabricTextHighlightComposite" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div><i data-icon-name="ChevronDown" class="ms-Button-menuIcon menuIcon-86" role="presentation"></i></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Font color" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-label="Font color" data-is-focusable="true" aria-expanded="false" aria-haspopup="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="FontColorSwatch" class="stacked-icon color-swatch root-42" role="presentation"></i><i data-icon-name="FontColorA" class="stacked-icon stacked-icon-FontColorA root-42" role="presentation"></i><i data-icon-name="FontColor" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div><i data-icon-name="ChevronDown" class="ms-Button-menuIcon menuIcon-86" role="presentation"></i></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Insert emoji" class="ms-Button rooster-command-bar-button rooster-emoji-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-label="Insert emoji" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i class="ms-Button-icon rooster-command-bar-icon rooster-emoji icon-87" role="presentation"></i></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Decrease indent" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-label="Decrease indent" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="DecreaseIndentText" class="stacked-icon stacked-icon-DecreaseIndentText root-42" role="presentation"></i><i data-icon-name="DecreaseIndentArrow" class="stacked-icon stacked-icon-DecreaseIndentArrow root-42" role="presentation"></i><i data-icon-name="DecreaseIndentLegacy" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Increase indent" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-label="Increase indent" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="IncreaseIndentText" class="stacked-icon stacked-icon-IncreaseIndentText root-42" role="presentation"></i><i data-icon-name="IncreaseIndentArrow" class="stacked-icon stacked-icon-IncreaseIndentArrow root-42" role="presentation"></i><i data-icon-name="IncreaseIndentLegacy" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Strikethrough" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-pressed="false" aria-label="Strikethrough" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="Strikethrough" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Header" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-label="Header" data-is-focusable="true" aria-expanded="false" aria-haspopup="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="FontSize" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i><i data-icon-name="ChevronDown" class="ms-Button-menuIcon menuIcon-86" role="presentation"></i></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Code" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-label="Code" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="Embed" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Mention someone" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-label="Mention someone" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="Accounts" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Mention a work item" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-label="Mention a work item" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="NumberSymbol" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Mention a pull request" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-label="Mention a pull request" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="BranchPullRequest" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Clear format" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-label="Clear format" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="ClearFormattingA" class="stacked-icon stacked-icon-ClearFormattingA root-42" role="presentation"></i><i data-icon-name="ClearFormattingEraser" class="stacked-icon stacked-icon-ClearFormattingEraser root-42" role="presentation"></i><i data-icon-name="ClearFormatting" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Insert image" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-label="Insert image" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="Photo2Fill" class="stacked-icon stacked-icon-Photo2Fill root-42" role="presentation"></i><i data-icon-name="Photo2" class="stacked-icon stacked-icon-Photo2 root-42" role="presentation"></i></div></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Create link" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar root-81"
+                                                                                                                                aria-label="Create link" data-is-focusable="true" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><i data-icon-name="Link" class="ms-Button-icon rooster-command-bar-icon icon-85" role="presentation"></i></div></button></div>
+                                                                                                                    </div>
+                                                                                                                    <div class="ms-CommandBarItem item_582ca1be rooster-command-button-root first-level html-command-button-root">
+                                                                                                                        <div class="ms-TooltipHost host_3e21a177 command-button-tool-tip"><button type="button" name="Remove link" class="ms-Button rooster-command-bar-button html-command-bar-button ms-Button--commandBar is-disabled root-88"
+                                                                                                                                disabled="" aria-label="Remove link" data-is-focusable="false" tabindex="-1"><div class="ms-Button-flexContainer flexContainer-44"><div class="stacked-icon-container"><i data-icon-name="RemoveLinkChain" class="stacked-icon stacked-icon-RemoveLinkChain root-42" role="presentation"></i><i data-icon-name="RemoveLinkX" class="stacked-icon stacked-icon-RemoveLinkX root-42" role="presentation"></i><i data-icon-name="RemoveLink" class="stacked-icon high-contrast-icon root-42" role="presentation"></i></div></div></button></div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="ms-CommandBar-sideCommands sideCommands_582ca1be"></div>
+                                                                                                            </div>
+                                                                                                        </div><input type="file" accept="image/*" style="display: none;"></div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="discussion-messages-container">
+                                                                                    <div class="discussion-messages">
+                                                                                        <div class="comments-section">
+                                                                                            <div></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="vss_1233" class="form-grid" tabindex="-1" style="display: none;">
+                                        <div class="section-container">
+                                            <div class="section1 form-section wide-section last-section section" style="float: right; width: 100%;"></div>
+                                            <div class="wrapping-container" style="width: 0%;"></div>
+                                            <div style="clear: left;"></div>
+                                            <div class="bottom-section section" style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                    <div id="vss_1239" class="form-grid" tabindex="-1" style="display: none;">
+                                        <div class="section-container">
+                                            <div class="section1 form-section wide-section last-section section" style="float: right; width: 100%;"></div>
+                                            <div class="wrapping-container" style="width: 0%;"></div>
+                                            <div style="clear: left;"></div>
+                                            <div class="bottom-section section" style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                    <div id="vss_1245" class="form-grid" tabindex="-1" style="display: none;">
+                                        <div class="section-container">
+                                            <div class="section1 form-section wide-section last-section section" style="float: right; width: 100%;"></div>
+                                            <div class="wrapping-container" style="width: 0%;"></div>
+                                            <div style="clear: left;"></div>
+                                            <div class="bottom-section section" style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop-target-container absolute-fill" aria-hidden="true"></div>
+            </div>
+        </div>
+        <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+            <div class="ui-dialog-buttonset"><button type="button" id="wit-dialog-save139" class="cta ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Save</span></button><button type="button" id="wit-dialog-save-close140"
+                    class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span
+                        class="ui-button-text">Save and close</span></button><button type="button" id="wit-dialog-close141" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span
+                        class="ui-button-text">Cancel</span></button></div>
+        </div>
+        <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
+        <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
+        <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+        <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
+        <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 90;" tabindex="0" role="button" aria-label="Resize dialog using arrow keys"></div>
+        <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
+        <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
+        <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
     </div>
+
+    <div data-componentregion="page" class="full-size">
+        <div class="full-size region-page" data-renderedregion="page">
+            <div class="flex-column full-size vertical-layout">
+                <div class="project-header flex-row flex-noshrink" role="navigation">
+                    <div class="flex-row flex-grow region-header" data-renderedregion="header" role="menubar">
+                        <label class="commandbar-item suite-logo flex-row flex-noshrink flex-center bolt-link">
+                            <span
+                                class="suite-image commandbar-icon justify-center flex-noshrink fabric-icon ms-Icon--VSTSLogo"></span>
+                            <span class="font-size-m font-weight-heavy brand">Azure DevOps</span></a>
+                            <div class="flex-row flex-grow scroll-hidden">
+                                <div
+                                    class="bolt-breadcrumb-container bolt-breadcrumb-with-items header-breadcrumb flex-grow">
+                                    <div class="bolt-breadcrumb flex-row flex-grow bolt-breadcrumb-with-items">
+                                        <div class="bolt-breadcrumb-overflow">
+                                            <div></div>
+                                        </div>
+                                        <div class="bolt-breadcrumb-list-item">
+                                            <div class="bolt-breadcrumb-item">
+                                                <label class="bolt-link">
+                                                    <div class="bolt-breadcrumb-item-text-container">
+                                                        <span class="bolt-breadcrumb-item-text">Gustavo Fraga</span>
+                                                    </div>
+                                            </div>
+                                            <div class="bolt-breadcrumb-divider">
+                                                <div class="bolt-breadcrumb-forward-slash">/</div>
+                                            </div>
+                                        </div>
+                                        <div class="bolt-breadcrumb-list-item">
+                                            <div class="bolt-breadcrumb-item">
+                                                <label class="bolt-link">
+                                                    <div class="bolt-breadcrumb-item-text-container">
+                                                        <span class="bolt-breadcrumb-item-text">Projeto Teste</span>
+                                                    </div>
+                                            </div>
+                                            <div class="bolt-breadcrumb-divider">
+                                                <div class="bolt-breadcrumb-forward-slash">/</div>
+                                            </div>
+                                        </div>
+                                        <div class="bolt-breadcrumb-list-item">
+                                            <div class="bolt-breadcrumb-item"><label class="bolt-link">
+                                                    <div class="bolt-breadcrumb-item-text-container"><span
+                                                            class="bolt-breadcrumb-item-text">Boards</span>
+                                                    </div>
+                                            </div>
+                                            <div class="bolt-breadcrumb-divider">
+                                                <div class="bolt-breadcrumb-forward-slash">/</div>
+                                            </div>
+                                        </div>
+                                        <div class="bolt-breadcrumb-list-item">
+                                            <div class="bolt-breadcrumb-item"><label class="bolt-link">
+                                                    <div class="bolt-breadcrumb-item-text-container"><span
+                                                            class="bolt-breadcrumb-item-text">Sprints</span></div>
+                                                    <div class="bolt-breadcrumb-hidden-element"></div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="flex-row region-headerBreadcrumb"
+                                                data-renderedregion="headerBreadcrumb"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex expandable-search-header lower-resolution" aria-owns="">
+                                <div class="flex-cell search" role="search">
+                                    <div class="search-icon cursor-pointer" role="button" title="Get search results">
+                                        <span class="flex-noshrink fabric-icon ms-Icon--Search"></span></div><input
+                                        class="search-input" placeholder="Search" type="text">
+                                </div>
+                            </div>
+                            <div aria-expanded="false" aria-haspopup="true" aria-label="My Work"
+                                class="commandbar-item commandbar-icon cursor-pointer flex-row flex-noshrink justify-center bolt-expandable-container flex-row flex-center"
+                                role="menuitem"><span class="flex-noshrink fabric-icon ms-Icon--CheckList"></span></div>
+                            <div aria-expanded="false" aria-haspopup="true" aria-label="Marketplace"
+                                class="commandbar-item commandbar-icon cursor-pointer flex-row flex-noshrink justify-center bolt-expandable-container flex-row flex-center"
+                                role="menuitem"><span class="flex-noshrink fabric-icon ms-Icon--Shop"></span></div>
+                            <div aria-expanded="false" aria-haspopup="true"
+                                class="navigation-profile-menu commandbar-item commandbar-icon cursor-pointer flex-row flex-noshrink justify-center bolt-expandable-container flex-row flex-center"
+                                role="menuitem">
+                                <div class="vss-Persona flex-noshrink small" aria-label="Gustavo Fraga">
+                                    <img class="vss-Persona-content using-image" src="assets/img/msa.png">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="flex-row flex-grow scroll-hidden">
+                    <div class="navigation-container flex-column">
+                        <div class="project-navigation region-navigation flex-column flex-grow font-size-m expanded"
+                            data-renderedregion="navigation" role="navigation">
+                            <div class="collapsible-section flex-noshrink">
+                                <div class="project-item flex-row flex-grow flex-center scroll-hidden"><span
+                                        class="navigation-icon flex-row flex-center flex-noshrink justify-center">
+                                        <div class="vss-Persona flex-noshrink project-persona flex-noshrink small"
+                                            aria-expanded="false" aria-label="project_test"><img
+                                                class="vss-Persona-content using-image"
+                                                src="assets/img/imagep.png"
+                                                alt=""></div>
+
+                                    </span>
+
+                                    <span
+                                        class="internal-breadcrumb--item vss-Breadcrumb--itemText vss-HubBreadcrumb--itemText ellipsis-text"
+                                        style="max-width: 340px;">Teste Imagem</span>
+                                </div>
+                                <div aria-expanded="false" aria-haspopup="true" aria-label="Create"
+                                    class="focus-treatment alt-hover-effect font-size-ml flex-row cursor-pointer bolt-expandable-container flex-row flex-center"
+                                    data-focuszone="focuszone-2" role="button" tabindex="0">
+                                    <span
+                                        class="navigation-icon flex-row flex-center justify-center flex-noshrink fabric-icon ms-Icon--Add"></span>
+                                </div>
+                            </div>
+                            <div class="separator flex-row flex-noshrink"></div>
+                            <div class="navigation-section flex-column flex-grow scroll-hidden v-scroll-auto custom-scrollbar"
+                                role="menubar">
+                                <div class="flex-column flex-noshrink relative hub-group-only">
+                                    <div aria-expanded="false" aria-haspopup="true"
+                                        class="flex-row flex-noshrink bolt-expandable-container flex-row flex-center"><a
+                                            aria-label="Overview"
+                                            class="hub-group navigation-element navigation-link focus-treatment flex-row flex-grow flex-center scroll-hidden relative bolt-link"><span
+                                                class="navigation-icon font-size-m flex-row flex-center flex-noshrink justify-center">
+                                                <img alt="Overview" class="contributed-icon contributed-icon-image bolt-image flex-noshrink"
+                                                    src="assets/img/Nav-Dashboard.png"></span><span
+                                                class="navigation-text expanded-only text-ellipsis">Overview</span></a>
+                                    </div>
+                                </div>
+                                <div class="flex-column flex-noshrink relative hub-group-container"><a
+                                        aria-label="Boards"
+                                        class="hub-group displayed navigation-element navigation-link focus-treatment flex-row flex-grow flex-center scroll-hidden relative bolt-link"><span
+                                            class="navigation-icon font-size-m flex-row flex-center flex-noshrink justify-center"><img
+                                                alt="Boards"
+                                                class="contributed-icon contributed-icon-image bolt-image flex-noshrink"
+                                                src="assets/img/Nav-Plan.png"></span><span
+                                            class="navigation-text expanded-only text-ellipsis">Boards</span></a><a
+                                        aria-label="Work Items"
+                                        class="hub navigation-element navigation-link focus-treatment flex-row flex-grow flex-center scroll-hidden relative bolt-link"><span
+                                            class="navigation-icon font-size-m flex-row flex-center flex-noshrink justify-center"><span
+                                                class="contributed-icon flex-noshrink fabric-icon ms-Icon--WorkItem"></span></span><span
+                                            class="navigation-text expanded-only text-ellipsis">Work Items</span></a><a
+                                        aria-label="Boards"
+                                        class="hub navigation-element navigation-link focus-treatment flex-row flex-grow flex-center scroll-hidden relative bolt-link"><span
+                                            class="navigation-icon font-size-m flex-row flex-center flex-noshrink justify-center"><span
+                                                class="contributed-icon flex-noshrink fabric-icon ms-Icon--BacklogBoard"></span></span><span
+                                            class="navigation-text expanded-only text-ellipsis">Boards</span></a><a
+                                        aria-label="Backlogs"
+                                        class="hub navigation-element navigation-link focus-treatment flex-row flex-grow flex-center scroll-hidden relative bolt-link"><span
+                                            class="navigation-icon font-size-m flex-row flex-center flex-noshrink justify-center"><span
+                                                class="contributed-icon flex-noshrink fabric-icon ms-Icon--BacklogList"></span></span><span
+                                            class="navigation-text expanded-only text-ellipsis">Backlogs</span></a><a
+                                        class="hub displayed navigation-element navigation-link focus-treatment flex-row flex-grow flex-center scroll-hidden relative bolt-link"><span
+                                            class="navigation-icon font-size-m flex-row flex-center flex-noshrink justify-center"><span
+                                                class="contributed-icon flex-noshrink fabric-icon ms-Icon--Sprint"></span></span><span
+                                            class="navigation-text expanded-only text-ellipsis">Sprints</span></a>
+                                    <a aria-label="Queries"
+                                        class="hub navigation-element navigation-link focus-treatment flex-row flex-grow flex-center scroll-hidden relative bolt-link"><span
+                                            class="navigation-icon font-size-m flex-row flex-center flex-noshrink justify-center"><span
+                                                class="contributed-icon flex-noshrink fabric-icon ms-Icon--QueryList"></span></span><span
+                                            class="navigation-text expanded-only text-ellipsis">Queries</span></a></div>
+                                <div class="flex-column flex-noshrink relative hub-group-only">
+                                    <div aria-expanded="false" aria-haspopup="true"
+                                        class="flex-row flex-noshrink bolt-expandable-container flex-row flex-center"
+                                        role="menuitem"><a
+                                            class="hub-group navigation-element navigation-link focus-treatment flex-row flex-grow flex-center scroll-hidden relative bolt-link"><span
+                                                class="navigation-icon font-size-m flex-row flex-center flex-noshrink justify-center"><img
+                                                    class="contributed-icon contributed-icon-image bolt-image flex-noshrink"
+                                                    src="assets/img/Nav-Code.png"></span><span
+                                                class="navigation-text expanded-only text-ellipsis">Repos</span></a>
+                                    </div>
+                                </div>
+                                <div class="flex-column flex-noshrink relative hub-group-only">
+                                    <div aria-expanded="false" aria-haspopup="true"
+                                        class="flex-row flex-noshrink bolt-expandable-container flex-row flex-center"
+                                        role="menuitem">
+                                        <a aria-label="Pipelines"
+                                            class="hub-group navigation-element navigation-link focus-treatment flex-row flex-grow flex-center scroll-hidden relative bolt-link"><span
+                                                class="navigation-icon font-size-m flex-row flex-center flex-noshrink justify-center"><img
+                                                    alt="Pipelines"
+                                                    class="contributed-icon contributed-icon-image bolt-image flex-noshrink"
+                                                    src="assets/img/Nav-Launch.png"></span><span
+                                                class="navigation-text expanded-only text-ellipsis">Pipelines</span></a>
+                                    </div>
+                                </div>
+                                <div class="flex-column flex-noshrink relative hub-group-only">
+                                    <div aria-expanded="false" aria-haspopup="true"
+                                        class="flex-row flex-noshrink bolt-expandable-container flex-row flex-center"
+                                        role="menuitem"><a
+                                            class="hub-group navigation-element navigation-link focus-treatment flex-row flex-grow flex-center scroll-hidden relative bolt-link"><span
+                                                class="navigation-icon font-size-m flex-row flex-center flex-noshrink justify-center"><img
+                                                    alt="Test Plans"
+                                                    class="contributed-icon contributed-icon-image bolt-image flex-noshrink"
+                                                    src="assets/img/Nav-Test.png"></span><span
+                                                class="navigation-text expanded-only text-ellipsis">Test
+                                                Plans</span></a></div>
+                                </div>
+                                <div class="flex-column flex-noshrink relative hub-group-only"><a
+                                        class="hub-group navigation-element navigation-link focus-treatment flex-row flex-grow flex-center scroll-hidden relative bolt-link"><span
+                                            class="navigation-icon font-size-m flex-row flex-center flex-noshrink justify-center"><img
+                                                alt="Artifacts"
+                                                class="contributed-icon contributed-icon-image bolt-image flex-noshrink"
+                                                src="assets/img/Nav-Feed.png"></span><span
+                                            class="navigation-text expanded-only text-ellipsis">Artifacts</span></a>
+                                </div>
+                            </div>
+                            <div class="separator flex-row flex-noshrink"></div>
+                            <div class="collapsible-section flex-noshrink"><a
+                                    class="hub stand-alone navigation-element navigation-link focus-treatment hover-effect flex-row flex-grow flex-center scroll-hidden relative bolt-link"><span
+                                        aria-labelledby="__bolt-project-settings-text"
+                                        class="navigation-icon font-size-ml flex-row flex-center justify-center flex-noshrink fabric-icon ms-Icon--Settings"></span><span
+                                        class="navigation-text expanded-only text-ellipsis">Project settings</span></a>
+                                <div aria-label="Show less information"
+                                    class="focus-treatment alt-hover-effect font-size flex-row" role="button"><span
+                                        class="navigation-icon flex-row flex-center flex-noshrink justify-center cursor-pointer flex-noshrink fabric-icon ms-Icon--DoubleChevronLeft"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-column flex-grow scroll-hidden">
+                        <div class="flex flex-noshrink region-content-header" data-renderedregion="content-header">
+                        </div>
+                        <div class="v-scroll-auto flex flex-grow relative region-content" data-renderedregion="content"
+                            role="main">
+                            <div class="external-hub-shim-container flex absolute-fill">
+                                <div id="vss_1" class="hub-external legacy-shim">
+                                    <div class="internal-content-host sprint-view-container">
+                                        <div class="ms-Fabric vss-Hub root-40">
+                                            <div class="vss-PivotBar vss-HubPivotBar">
+                                                <div class="vss-PivotBar--bar-two-line bottom-border">
+                                                    <div class="vss-PivotBar--header">
+                                                        <div class="vss-HubHeader">
+                                                            <div
+                                                                class="vss-Breadcrumb--container vss-HubBreadcrumb--container">
+                                                                <div
+                                                                    class="ms-ResizeGroup vss-Breadcrumb--resizeGroup root-52">
+                                                                    <div class="vss-Breadcrumb vss-HubBreadcrumb"
+                                                                        role="navigation" aria-label="Breadcrumbs">
+                                                                        <div role="presentation" class="ms-FocusZone"
+                                                                            data-focuszone-id="FocusZone38">
+                                                                            <ol class="internal-breadcrumb--list">
+                                                                                <li
+                                                                                    class="internal-breadcrumb--listItem">
+                                                                                    <div
+                                                                                        class="vss-Breadcrumb--item vss-HubBreadcrumb--item vss-Breadcrumb--item-min-height">
+
+                                                                                        <div
+                                                                                            class="vss-Breadcrumb--itemContainer vss-HubBreadcrumb--itemContainer">
+                                                                                            <i data-icon-name="sprint"
+                                                                                                class="vss-Breadcrumb--item-leftIcon vss-HubBreadcrumb--item-leftIcon sprint-title-icon vss-Icon root-42"
+                                                                                                role="presentation"></i>
+                                                                                            <span
+                                                                                                class="internal-breadcrumb--item vss-Breadcrumb--itemText vss-HubBreadcrumb--itemText ellipsis-text"
+                                                                                                style="max-width: 340px;">Teste
+                                                                                                Imagem </span>
+                                                                                            <i data-icon-name="ChevronDown"
+                                                                                                class="vss-Breadcrumb--item-dropdown vss-HubBreadcrumb--item-dropdown vss-Breadcrumb--item-dropdown-with-picker vss-HubBreadcrumb--item-dropdown-with-picker vss-Icon root-42"
+                                                                                                role="presentation"></i>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="vss-Breadcrumb--hiddenElement">
+                                                                                        </div>
+
+                                                                                        <div
+                                                                                            class="vss-IndicatorSet flex-row">
+                                                                                            <div
+                                                                                                class="ms-TooltipHost vss-ItemIndicator">
+                                                                                                <div
+                                                                                                    class="ms-Button-flexContainer flexContainer-44">
+                                                                                                    <i data-icon-name="FavoriteStar"
+                                                                                                        class="ms-Button-icon vss-FavoriteItemPicker--starIcon ms-font-l icon-51"
+                                                                                                        role="presentation"></i>
+
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ol>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="ms-TooltipHost host_3e21a177">
+                                                                    <div
+                                                                        class="ms-Button-flexContainer flexContainer-44">
+                                                                        <i data-icon-name="People"
+                                                                            class="ms-Button-icon icon-51"
+                                                                            role="presentation"></i></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vss-HubTileRegion">
+                                                            <div class="sprint-hub sprint-dates-container">
+                                                                <div class="sprint-dates-working-days" id="vss_5">
+                                                                    <button class="sprint-date hub-title-right">No
+                                                                        iteration dates</button>
+                                                                    <div
+                                                                        class="sprint-working-days hub-title-right-secondary">
+                                                                        <button
+                                                                            class="agile-url-link-button sprint-set-dates-button">Set
+                                                                            dates</button></div>
+                                                                </div>
+                                                                <div class="burndown-chart small-chart-container"
+                                                                    id="vss_2" title="Burndown for: Sprint 1"><img
+                                                                        src="assets/img/empty-chart-placeholder.png"
+                                                                        alt="No burndown charts are available because you have not configured a start date and an end date for following iteration: project_test\Sprint 1."
+                                                                        class="burndown-chart-error-image"
+                                                                        aria-describedby="vss_4"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vss-PivotBar--bar tall">
+                                                        <div role="navigation">
+                                                            <div role="tablist"
+                                                                class="ms-FocusZone vss-PivotBar--pivots tall"
+                                                                data-focuszone-id="FocusZone4"><span
+                                                                    class="vss-PivotBar--itemLink" role="presentation"
+                                                                    data-is-focusable="false"><button aria-setsize="3"
+                                                                        aria-posinset="1" aria-selected="true"
+                                                                        class="vss-PivotBar--button selected bolt-button enabled bolt-focus-treatment"
+                                                                        data-focuszone="" data-is-focusable="true"
+                                                                        role="tab" tabindex="0" type="button"><span
+                                                                            class="innerContainer"><span class="text"
+                                                                                style="max-width: 340px;">Taskboard</span></span></button></span><span
+                                                                    class="vss-PivotBar--itemLink" role="presentation"
+                                                                    data-is-focusable="false"><button aria-setsize="3"
+                                                                        aria-posinset="2" aria-selected="false"
+                                                                        class="vss-PivotBar--button bolt-button enabled bolt-focus-treatment"
+                                                                        data-focuszone="" data-is-focusable="true"
+                                                                        role="tab" type="button"><span
+                                                                            class="innerContainer"><span class="text"
+                                                                                style="max-width: 340px;">Backlog</span></span></button></span><span
+                                                                    class="vss-PivotBar--itemLink" role="presentation"
+                                                                    data-is-focusable="false"><button aria-setsize="3"
+                                                                        aria-posinset="3" aria-selected="false"
+                                                                        class="vss-PivotBar--button bolt-button enabled bolt-focus-treatment"
+                                                                        data-focuszone="" data-is-focusable="true"
+                                                                        role="tab" type="button"><span
+                                                                            class="innerContainer"><span class="text"
+                                                                                style="max-width: 340px;">Capacity</span></span></button></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vss-PivotBar--right" role="region">
+                                                            <div class="vss-PivotBar--separator"></div>
+                                                            <div
+                                                                class="ms-CommandBar root_582ca1be vss-PivotBar--commandBar">
+                                                                <div role="menubar"
+                                                                    class="ms-FocusZone container_582ca1be"
+                                                                    data-focuszone-id="FocusZone6">
+                                                                    <div
+                                                                        class="ms-CommandBar-primaryCommands primaryCommands_582ca1be">
+                                                                        <div
+                                                                            class="ms-CommandBarItem item_582ca1be vss-PivotBar--commandBar-item">
+                                                                            <button name="New Work Item"
+                                                                                class="ms-CommandBarItem-link itemLink_582ca1be"
+                                                                                title="" id="btnNewWorkItem"
+                                                                                onclick="openModal()"
+                                                                                data-command-key="new-work-item"
+                                                                                aria-haspopup="false" role="menuitem"
+                                                                                aria-setsize="7" aria-posinset="1">
+                                                                                <i class="ms-CommandBarItem-icon itemIcon_582ca1be ms-CommandBarItem-iconColor itemIconColor_582ca1be vss-PivotBar--commandBar-icon vss-Icon vss-Icon--bowtie bowtie-math-plus-light root-56"
+                                                                                   ></i><span
+                                                                                   class="ms-CommandBarItem-commandText itemCommandText_582ca1be">New Work Item</span></button></div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="ms-CommandBar-sideCommands sideCommands_582ca1be">
+                                                                        <div
+                                                                            class="ms-CommandBarItem item_582ca1be sprint-picker-view-action vss-PivotBar--commandBar-item">
+                                                                            <div class="ms-TooltipHost host_3e21a177">
+                                                                                <button name="Sprint 1"
+                                                                                    class="ms-CommandBarItem-link itemLink_582ca1be"
+                                                                                    title=""
+                                                                                    id="CommandBar5sprint-picker"
+                                                                                    data-command-key="sprint-picker"
+                                                                                    aria-haspopup="true"
+                                                                                    aria-expanded="false"
+                                                                                    role="menuitem" aria-setsize="7"
+                                                                                    aria-posinset="2"><i
+                                                                                        data-icon-name="sprint"
+                                                                                        class="ms-CommandBarItem-icon itemIcon_582ca1be ms-CommandBarItem-iconColor itemIconColor_582ca1be sprint-title-icon vss-PivotBar--commandBar-icon vss-Icon root-42"
+                                                                                        role="presentation"></i><span
+                                                                                        class="ms-CommandBarItem-commandText itemCommandText_582ca1be">Sprint
+                                                                                        1</span><i
+                                                                                        data-icon-name="ChevronDown"
+                                                                                        class="ms-CommandBarItem-chevronDown itemChevronDown_582ca1be root-42"
+                                                                                        role="presentation"></i></button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="ms-CommandBarItem item_582ca1be people-switcher-view-action vss-PivotBar--commandBar-item">
+                                                                            <button name="Person: All"
+                                                                                class="ms-CommandBarItem-link itemLink_582ca1be"
+                                                                                title="" id="CommandBar5people-switcher"
+                                                                                data-command-key="people-switcher"
+                                                                                aria-haspopup="true"
+                                                                                aria-expanded="false" role="menuitem"
+                                                                                aria-setsize="7" aria-posinset="3"><i
+                                                                                    data-icon-name="People"
+                                                                                    class="ms-CommandBarItem-icon itemIcon_582ca1be ms-CommandBarItem-iconColor itemIconColor_582ca1be vss-PivotBar--commandBar-icon vss-Icon root-42"
+                                                                                    role="presentation"></i><span
+                                                                                    class="ms-CommandBarItem-commandText itemCommandText_582ca1be">Person:
+                                                                                    All</span><i
+                                                                                    data-icon-name="ChevronDown"
+                                                                                    class="ms-CommandBarItem-chevronDown itemChevronDown_582ca1be root-42"
+                                                                                    role="presentation"></i></button>
+                                                                        </div>
+                                                                        <div
+                                                                            class="ms-CommandBarItem item_582ca1be vss-PivotBar--viewOptionsMenu vss-PivotBar--commandBar-item">
+                                                                            <div class="ms-TooltipHost host_3e21a177">
+                                                                                <button name=""
+                                                                                    class="ms-CommandBarItem-link itemLink_582ca1be ms-CommandBarItem--noName itemLinkIsNoName_582ca1be"
+                                                                                    title="" id="CommandBar5viewOptions"
+                                                                                    data-command-key="viewOptions"
+                                                                                    aria-haspopup="true"
+                                                                                    aria-expanded="false"
+                                                                                    role="menuitem"
+                                                                                    aria-label="View options"
+                                                                                    aria-setsize="7"
+                                                                                    aria-posinset="4"><i
+                                                                                        data-icon-name="Equalizer"
+                                                                                        class="ms-CommandBarItem-icon itemIcon_582ca1be ms-CommandBarItem-iconColor itemIconColor_582ca1be vss-PivotBar--commandBar-icon vss-Icon root-42"
+                                                                                        role="presentation"></i><i
+                                                                                        data-icon-name="ChevronDown"
+                                                                                        class="ms-CommandBarItem-chevronDown itemChevronDown_582ca1be root-42"
+                                                                                        role="presentation"></i></button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="ms-CommandBarItem item_582ca1be vss-PivotBar--commandBar-item">
+                                                                            <div class="ms-TooltipHost host_3e21a177">
+                                                                                <button name=""
+                                                                                    class="ms-CommandBarItem-link itemLink_582ca1be ms-CommandBarItem--noName itemLinkIsNoName_582ca1be"
+                                                                                    title=""
+                                                                                    id="CommandBar5work-item-filter-bar"
+                                                                                    data-command-key="work-item-filter-bar"
+                                                                                    aria-haspopup="false"
+                                                                                    role="menuitem" aria-label="Filter"
+                                                                                    aria-setsize="7"
+                                                                                    aria-posinset="5"><i
+                                                                                        data-icon-name="Filter"
+                                                                                        class="ms-CommandBarItem-icon itemIcon_582ca1be ms-CommandBarItem-iconColor itemIconColor_582ca1be vss-PivotBar--commandBar-icon vss-Icon root-42"
+                                                                                        role="presentation"></i></button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="ms-CommandBarItem item_582ca1be vss-PivotBar--commandBar-item">
+                                                                            <div class="ms-TooltipHost host_3e21a177">
+                                                                                <button name=""
+                                                                                    class="ms-CommandBarItem-link itemLink_582ca1be ms-CommandBarItem--noName itemLinkIsNoName_582ca1be"
+                                                                                    title=""
+                                                                                    id="CommandBar5common-settings"
+                                                                                    data-command-key="common-settings"
+                                                                                    aria-haspopup="false"
+                                                                                    role="menuitem"
+                                                                                    aria-label="Configure team settings"
+                                                                                    aria-setsize="7" aria-posinset="6">
+                                                                                    <span data-icon-name="settings"
+                                                                                        class="ms-CommandBarItem-icon itemIcon_582ca1be ms-CommandBarItem-iconColor itemIconColor_582ca1be vss-PivotBar--commandBar-icon vss-Icon root-42"
+                                                                                        role="presentation">
+                                                                                    </span></button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="ms-CommandBarItem item_582ca1be vss-PivotBar--commandBar-item">
+                                                                            <span
+                                                                                class="vss-PivotBar-commandBar-toggle-host">
+                                                                                <button
+                                                                                    aria-label="Enter full screen mode"
+                                                                                    aria-checked="false"
+                                                                                    class="vss-PivotBar--commandBar-toggle pivotBar-toggle-button bolt-button bolt-icon-button enabled subtle icon-only bolt-focus-treatment"
+                                                                                    data-focuszone=""
+                                                                                    data-is-focusable="true"
+                                                                                    role="switch" tabindex="0"
+                                                                                    type="button"><span
+                                                                                        class="vss-Icon left-icon flex-noshrink fabric-icon ms-Icon--FullScreen"></span></button></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="vss-PivotBar--content" role="tabpanel"
+                                                    data-is-scrollable="true">
+                                                    <div class="vss-PivotBarItem content-host customPadding">
+                                                        <div
+                                                            class="split-view vss-Splitter--container vss-Splitter--container-row">
+                                                            <div class="vss-Splitter--pane-flexible">
+                                                                <div class="taskboard-wrapper" role="main"
+                                                                    aria-label="Taskboard">
+                                                                    <div class="sprints-hub-taskboard-spacer">
+                                                                        <div class="sprints-hub-taskboard">
+                                                                            <div class="taskboard">
+                                                                                <div class="taskboard-message-area">
+                                                                                </div>
+                                                                                <div class="taskboard-filter-message-area message-area-control bowtie closeable"
+                                                                                    id="vss_575" role="alert"
+                                                                                    style="display: none;">
+                                                                                    <div class="message-header">
+                                                                                        <span></span><a
+                                                                                            class="linkAction show-details-action"
+                                                                                            href="#" role="button"
+                                                                                            aria-controls="576"
+                                                                                            style="display: none;"></a>
+                                                                                    </div>
+                                                                                    <div id="576" class="error-content"
+                                                                                        style="display: none;"></div>
+                                                                                    <div class="close-action bowtie-icon bowtie-navigate-close propagate-keydown-event"
+                                                                                        aria-label="Dismiss"
+                                                                                        role="button" tabindex="0">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="taskboard-dismissable-message-area">
+                                                                                </div>
+                                                                                <div
+                                                                                    class="taskboardTableHeaderScrollContainer nonScrollable">
+                                                                                    <div class="tableHeaderInnerContainer"
+                                                                                        style="width: 1066px; padding-right: 17px;">
+                                                                                        <table
+                                                                                            id="taskboard-table-header"
+                                                                                            summary="The column headers represent the State values, and the row headers represent the following field: Issues. Each intersection of these fields can contain more than one work item.">
+                                                                                            <thead>
+                                                                                                <tr
+                                                                                                    class="taskboard-row">
+                                                                                                    <th
+                                                                                                        class="taskboard-expander header-row">
+                                                                                                        <button
+                                                                                                            class="expand-collapse-button"
+                                                                                                            id="expand-collapse-button"
+                                                                                                            aria-label="Collapse all">
+                                                                                                            <div
+                                                                                                                class="bowtie-icon bowtie-chevron-up-all">
+                                                                                                            </div>
+                                                                                                            <div
+                                                                                                                class="expand-collapse-text">
+                                                                                                                Collapse
+                                                                                                                all
+                                                                                                            </div>
+                                                                                                        </button></th>
+                                                                                                    <th class="taskboard-cell"
+                                                                                                        id="taskboard-table-header_s0"
+                                                                                                        style="width: 33.3333%;">
+                                                                                                        <span
+                                                                                                            class="witState">New</span><span
+                                                                                                            class="witRemainingWork"></span>
+                                                                                                    </th>
+                                                                                                    <th class="taskboard-cell"
+                                                                                                        id="taskboard-table-header_s1"
+                                                                                                        style="width: 33.3333%;">
+                                                                                                        <span
+                                                                                                            class="witState">Active</span><span
+                                                                                                            class="witRemainingWork"></span>
+                                                                                                    </th>
+                                                                                                    <th class="taskboard-cell"
+                                                                                                        id="taskboard-table-header_s2"
+                                                                                                        style="width: 33.3333%;">
+                                                                                                        <span
+                                                                                                            class="witState">Closed</span><span
+                                                                                                            class="witRemainingWork"></span>
+                                                                                                    </th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="taskboardTableBodyScrollContainer scrollable">
+                                                                                    <table id="taskboard-table-body"
+                                                                                        summary="The column headers represent the State values, and the row headers represent the following field: Issues. Each intersection of these fields can contain more than one work item."
+                                                                                        aria-labelledby="iteration-board-title-id"
+                                                                                        aria-describedby="taskboard-aria-describedby-id"
+                                                                                        style="width: 1049px;">
+                                                                                        <colgroup>
+                                                                                            <col
+                                                                                                class="taskboard-expander">
+                                                                                            <col
+                                                                                                class="taskboard-parent">
+                                                                                            <col
+                                                                                                style="width: 33.3333%;">
+                                                                                            <col
+                                                                                                style="width: 33.3333%;">
+                                                                                            <col
+                                                                                                style="width: 33.3333%;">
+                                                                                        </colgroup>
+                                                                                        <tbody>
+                                                                                            <tr class="taskboard-row taskboard-content-row"
+                                                                                                id="taskboard-row-1"
+                                                                                                style="">
+                                                                                                <td
+                                                                                                    class="taskboard-expander highlight-on-row-change">
+                                                                                                    <button
+                                                                                                        class="bowtie-icon bowtie-toggle-tree-expanded"
+                                                                                                        aria-label="Collapse Unassigned"
+                                                                                                        title="Collapse this row"></button>
+                                                                                                </td>
+                                                                                                <td id="tdParent" class="taskboard-cell taskboard-parent highlight-on-row-change">
+                                                                                                </td>
+                                                                                                <td class="taskboard-cell ui-droppable" ondrop="onDrop(event)" ondragover="allowDrop(event)" axis="taskboard-table-body_s0" style="padding-bottom: 40px;">
+                                                                                                    <div>
+                                                                                                        <div id="vss_578" class="add-new-item board-add-card" role="button">
+                                                                                                            <div class="bowtie-icon bowtie-math-plus-box-light">
+                                                                                                            </div><span class="text" style="display: none;">New item</span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                                <td class="taskboard-cell ui-droppable" ondrop="onDrop(event)" ondragover="allowDrop(event)" axis="taskboard-table-body_s1">
+                                                                                                </td>
+                                                                                                <td class="taskboard-cell ui-droppable" ondrop="onDrop(event)" ondragover="allowDrop(event)" axis="taskboard-table-body_s2">
+                                                                                                </td>
+                                                                                                </tr>
+                                                                                                <tr class="taskboard-row taskboard-row-summary ui-droppable" id="taskboard-summary-row-1" style="display: none;">
+                                                                                                    <td class="taskboard-expander">
+                                                                                                        <button class="bowtie-icon bowtie-toggle-tree-collapsed" title="Expand this row" aria-label="Expand Unassigned"></button>
+                                                                                                    </td>
+                                                                                                    <td class="taskboard-cell taskboard-parent taskboard-parent-width" colspan="4">
+                                                                                                        <div class="tbPivotItem">
+                                                                                                            <div class="ellipsis" tabindex="0">
+                                                                                                                <span class="collapsed-tile-gutter"><span
+                                                                                                                                                                                                            class="work-item-type-icon-host">
+                                                                                                                                                                                                            <div
+                                                                                                                                                                                                                class="ms-TooltipHost host_3e21a177 work-item-type-icon-wrapper">
+                                                                                                                                                                                                                <i aria-label="Issue"
+                                                                                                                                                                                                                    class="work-item-type-icon bowtie-icon bowtie-symbol-issue"
+                                                                                                                                                                                                                    style="color: rgb(51, 153, 71);"></i>
+                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                        </span></span><span class="icon bowtie-icon bowtie-status-warning pivot-warning" style="display:none; "></span>
+                                                                                                                <span class="witTitle">Desenvolver Tela Tasks
+                                                                                                                    </span>
+                        <div class="witStateSummary">
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    <div id="taskboard-aria-describedby-id" style="visibility: hidden;">On a card, press enter or space to open the workItem, use shift F10 for context menu, use tab to navigate between cards, use control arrow keys to reorder cards or change column, use control shift up or down to change parent</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="flex flex-noshrink region-content-footer" data-renderedregion="content-footer">
+    </div>
+    </div>
+    </div>
+    <div class="footer flex flex-noshrink region-footer" data-renderedregion="footer"></div>
+    </div>
+    </div>
+    </div>
+    <div class="bolt-portal-host absolute-fill no-events scroll-hidden"></div>
+    <div id="vssFocusRing" style="visibility: hidden;"></div>
+    <div class="error-section"></div>
+</body>
+
 </html>
